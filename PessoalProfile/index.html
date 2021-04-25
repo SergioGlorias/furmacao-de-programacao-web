@@ -7,29 +7,141 @@
                 color: #FFFFFF;
                 text-align: center;
                 width: 100%;
+            }
+            #top #logo {
+                width: 100%;
                 padding: 50px 0;
             }
-            #top p {
-                font-weight: bold;
+            #top #logo p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 3px;
                 font-size: 20px;
             }
-            #top h1 {
+            #top #logo h1 {
                 font-size: 60px;
+                font-family: monospace;
             }
-            #top h1:hover {
+            #top #logo h1:hover {
+                font-family: sans-serif;
                 letter-spacing: 1px
             }
-
             
+            #top #menu {
+                color: #FFFFFF;
+                text-align: center;
+                width: 100%;
+                font-size: 18px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            #top #menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            #top #menu li {
+                display: inline-block;
+            }
+            #top #menu li a {
+                display: block;
+                color: white;
+                padding: 8px 16px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            /* criar um Enfeito com Hover */
+            #top #menu li a:hover {
+                background-color: cornflowerblue;
+            }
+            #down {
+                background-color: cornflowerblue;
+                text-align: center;
+                padding: 5px
+            }
+            #down a {
+                text-decoration: none;
+                font-size: 16px;
+                color: white;
+            }
+            #conteudo {
+                width: 90%;
+                font-family: sans-serif;
+                margin: auto;
+            }
+            #conteudo table tr td img#emote {
+                width: 300px;
+            }
+
+            #conteudo table tr td#text {
+                width: 100%;
+                padding: 0 20px;
+                vertical-align: middle;
+            }
+
+            #conteudo h2{
+                color: tomato;
+                text-align: center;
+                font-weight: normal;
+                font-size: 30px;
+            }
+            #conteudo p {
+                font-size: 18px;
+            }
         </style>
     </head>
     <body>
+        <a name="intro"></a>
         <div id="top">
-            <h1> Sérgio Glórias </h1>
-            <p> Um Programador Web e de NODE.js<p>
+            <div id="logo">
+                <h1> Sérgio Glórias </h1>
+                <p> Um Programador de Node.js</p>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="#sobre"> Sobre Mim</a></li>
+                    <li><a href="#projetos"> Projetos </a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            
+        <br>
+        <div id="conteudo">
+            <a name="sobre"></a>
+            <div id="sobre">
+                <table>
+                    <tr>
+                        <td><img id="emote" src="https://sergioglorias.github.io/img/emotes/hello.png"></td>
+                        <td id="text">
+                            <h2>Sobre Mim</h2>
+                            <p>
+                                Olá eu sou o Sérgio Glórias, tenho 21 anos. <br>
+                                Sou um programador de javascript em Node.js e um amante do Sistema do Pinguim (Linux)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <a name="projetos"></a>
+            <div id="projetos">
+                <table>
+                    <tr>
+                        <td id="text">
+                            <h2>Projetos</h2>
+                            <p>
+                                Um dos projetos que tenho em mente de lançar é um Bot publico para Discord que terá varias funções
+                            </p>
+                            <ul>
+                                <li><a href="https://github.com/Slaycer-Network/Slaycer-BOT">Link do Projeto</a></li>
+                            </ul>
+                        </td>
+                        <td><img id="emote" src="https://avatars.githubusercontent.com/u/55157102"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="down">
+            <a href="#intro"> Voltar para Topo</a>
         </div>
     </body>
 </html>
