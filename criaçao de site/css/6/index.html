@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo CSS - com ID</title>
+        <style>
+            #t1 {
+                color: green;
+            }
+            #para {
+                color: red;
+                background: yellow;
+            }
+            div#ex2 {
+                border: 1px dotted red;
+                padding: 20px;
+            }
+            #titulo {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 40px;
+                color: #ee0000;
+                margin: 5px;
+                text-align: center;
+            }
+            #subtitulo {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                color: #777;
+                margin: 0;
+                text-align: center;
+            }
+            .texto1 {
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                text-align: justify;
+                background: #ffaaaa;
+                margin-left: 15px;
+                border: 4px solid #ff0000;
+                border-width: 0 0 2px 0;
+            }
+            #k1 {
+                font-size: 18px;
+                background: #000000;
+                color: #1e90ff;
+                text-align: center;
+                border-bottom: 2px solid #aabccf;
+                font-family: Verdana, Arial, Arial, Helvetica;
+            }
+            #ni {
+                text-shadow: 0 0 15px #1e90ff;
+                background: #000000;
+                color: #1e90ff;
+                text-align: center;
+                font-size: 50px;
+            }
+            #in {
+                background: #cccccc;
+                color: #cccccc;
+                text-shadow: -1px -1px 3px #ffffff,
+                            -1px -1px 3px #ffffff;
+                text-align: center;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Trabalho com CSS -  cascading Style Sheets</h1>
+        <h3 id="t1">Este Heading será Verde</h3>
+        <b> Texto em negrito - Bold </b> <br>
+        <p id="para"> Este Parágrafo será formatado com ID </p>
+        <p>Este Parágrafo não tem ID atribuido - Por isso não terá formatação</p>
+        <h3 id="t1"><i> Mais um exemplo de ID no Heading</i></h3>
+
+        <div id="ex2">
+            Vejam a bruxa da raposa salta-pocinhas e o cão feliz que dorme regalado
+        </div>
+        <h3 id="t1"> <u>Este Heading será Verde</u></h3>
+        <h1 id="titulo"> Cabeçalho formatado com o estilo Titulo </h1>
+        <p id="titulo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat eaque ipsam, quo molestias autem reprehenderit dignissimos vitae nisi ducimus numquam, temporibus quaerat ab reiciendis porro nostrum perferendis deserunt dolorem! </p>
+        <h2 id="subtitulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste voluptates nesciunt ipsum, corrupti accusantium delectus distinctio fuga suscipit sint possimus facere reprehenderit, rerum placeat! Corporis placeat quo atque mollitia incidunt?</h2>
+        <p id="subtitulo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellat eaque ipsam, quo molestias autem reprehenderit dignissimos vitae nisi ducimus numquam, temporibus quaerat ab reiciendis porro nostrum perferendis deserunt dolorem! </p>
+
+        <div class="texto1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae blanditiis ab dolore laudantium odit accusamus dicta dolorem molestiae provident omnis iste ut soluta nesciunt libero id necessitatibus consectetur, asperiores architecto.</p>
+        </div>
+
+        <p id="k1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat saepe, repellat alias enim veniam voluptas dolorem voluptatibus voluptatem adipisci sint repudiandae amet aut consequatur, ad provident tempore commodi harum deserunt?</p>
+
+        <h2 id=ni> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt architecto corrupti obcaecati a. Praesentium recusandae ex obcaecati itaque reiciendis labore, cum quas cupiditate porro incidunt earum, harum, sequi iure! </h2>
+        <h2 id=in> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt architecto corrupti obcaecati a. Praesentium recusandae ex obcaecati itaque reiciendis labore, cum quas cupiditate porro incidunt earum, harum, sequi iure! </h2>
+    </body>
+</html>
