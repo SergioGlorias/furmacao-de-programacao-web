@@ -1,0 +1,61 @@
+h1, h2, h3 {
+    margin: 0px;
+    padding: 10px;
+
+}
+header, nav, main, section, article, aside, footer {
+    display: block;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ebebe0;
+}
+main {
+    max-width: 75%;
+    float: left;
+}
+aside {
+    max-width: 25%;
+    float: right;
+    background: #bbbbbb;
+}
+footer {
+    clear: both;
+    background: #b3b3a7;
+}
+img {
+    max-width: 100%;
+}
+p {
+    padding: 10px;
+    text-align: justify;
+    margin: 0px;
+}
+ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a{
+    padding-right: 8px;
+}
+a:hover {
+    color: brown;
+}
+a {
+    text-decoration: none;
+}
+article {
+    background: #fff;
+    overflow: auto;
+}
+article img {
+    margin-right: 25px;
+    margin-bottom: 15px;
+    float: left;
+}
