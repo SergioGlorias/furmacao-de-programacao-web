@@ -22,18 +22,69 @@ export default function App() {
       </View>
       <View style={{ flex: 18 }}>
         <TouchableHighlight onPress={() => Linking.openURL("https://youtube.com/shorts/gh7EQsSrd_o")} activeOpacity={1} underlayColor="#fff">
-          <View style={styles.shadow, styles.ad}>
-            <View style={{ flex: 3, backgroundColor: "#fff", justifyContent: "center", borderTopLeftRadius: 7, borderTopRightRadius: 7}}>
+          <View style={styles.ad}>
+            <View style={{ flex: 3, backgroundColor: "#fff", justifyContent: "center", borderTopLeftRadius: 7, borderTopRightRadius: 7 }}>
               <Text style={{ marginLeft: wp(5), fontWeight: "bold", fontSize: 16 }}>Today</Text>
               <Text style={{ marginLeft: wp(5), fontWeight: "bold", fontSize: 18 }}>Special</Text>
               <Text style={{ marginLeft: wp(5), fontWeight: "bold", fontSize: 25, color: "#e37302", letterSpacing: 2 }}>FOOD</Text>
             </View>
-            <View style={{ flex: 0.001, position: "relative", left: wp(40), top: hp(-14) }}><Image style={styles.img} source={require("./assets/mango.png")} /></View>
+            <View style={{ flex: 0.001, position: "absolute", left: wp(40), top: hp(3), zIndex: 10 }}><Image style={styles.img} source={require("./assets/mango.png")} /></View>
             <View style={{ flex: 2, backgroundColor: "#e37302", borderBottomRightRadius: 7, borderBottomLeftRadius: 7, justifyContent: "center" }}>
               <Text style={{ backgroundColor: "#030014", color: "#fff", marginLeft: wp(6), marginRight: "auto", padding: 5 }}>Order Now</Text>
             </View>
           </View>
         </TouchableHighlight>
+
+        <View style={{ flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", padding: 10 }}>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 , width: "100%", height: "100%" }}>
+              <Image source={require("./assets/chilli.png")}></Image>
+            </View>
+            <View style={{ flex: 2, justifyContent: "center" }}>
+              <Text style={styles.proctText}>Vegetables</Text>
+            </View>
+          </View>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 }}>
+
+            </View>
+            <View style={{ flex: 2, justifyContent: "center" }}>
+              <Text style={styles.proctText}>Fruits</Text>
+            </View>
+          </View>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 }}>
+
+            </View>
+            <View style={{ flex: 2, justifyContent: "center" }}>
+              <Text style={styles.proctText}>Juice</Text>
+            </View>
+          </View>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 }}>
+
+            </View>
+            <View style={{ flex: 2, justifyContent: "center" }}>
+              <Text style={styles.proctText}>Drink</Text>
+            </View>
+          </View>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 }}>
+
+            </View>
+            <View style={{ flex: 2, justifyContent: "center" }}>
+              <Text style={styles.proctText}>Food & Meals...</Text>
+            </View>
+          </View>
+          <View style={styles.protucts}>
+            <View style={{ flex: 4 }}>
+
+            </View>
+            <View style={{ flex: 2,justifyContent: "center" }}>
+              <Text style={styles.proctText}>Cake</Text>
+            </View>
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -106,6 +157,29 @@ const styles = StyleSheet.create({
     position: "relative",
     width: 150,
     height: 150,
+  },
+  protucts: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0.34,
+    shadowRadius: 6.27,
+    elevation: 10,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    width: wp(25),
+    height: hp(15),
+    margin: 10
+  },
+  proctText: {
+    marginLeft: 5, 
+    fontWeight: "bold"
+  },
+  prodctImg: {
+    width: 50,
+    height: 11
   }
 
 });
