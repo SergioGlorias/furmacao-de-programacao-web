@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito TW</title>
+</head>
+
+<body>
+    <h1> Enfeito TW em Javascript </h1>
+
+    <h3 id="demo"> </h3>
+    <button onclick="tw()">Clique </button>
+
+    <script>
+        var i = 0;
+        var texto = 'Bemvindos a Turma 20131 - do Ano 2021';
+        var speed = 50;
+
+        function tw() {
+            if (i<texto.length) {
+                document.getElementById("demo").innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(tw, speed);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função no Javascript</title>
+    <script>
+        function calcula(operacao) {
+            var parcela1 = document.calc.parcela1.value
+            var parcela2 = document.calc.parcela2.value
+            var resultado = eval(parcela1+ operacao + parcela2)
+            document.calc.resultado.value = resultado
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Máquina de Cálculo em Javascript</h2>
+    <br>
+    <form name="calc">
+        Valor 1: <input type="number" name="parcela1" size="14" style="text-align: right;">
+        <br><br>
+        Valor 2: <input type="number" name="parcela2" size="14" style="text-align: right;">
+        <br><br>
+        Resultado: <input type="number" name="resultado" size="14" style="text-align: right;" readonly>
+        <br><br>
+        <input type="button" value="+" onclick="calcula('+')">
+        <input type="button" value="-" onclick="calcula('-')">
+        <input type="button" value="×" onclick="calcula('*')">
+        <input type="button" value="÷" onclick="calcula('/')">
+    </form>
+</body>
+
+</html>

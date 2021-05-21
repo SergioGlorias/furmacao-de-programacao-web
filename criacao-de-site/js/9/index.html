@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .product_min_img img {
+            height: 9vh;
+            margin: 1vh 0;
+            cursor: pointer;
+            display: block;
+            opacity: 0.6;
+        }
+
+        .produtos {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 25px;
+            flex-wrap:wrap; 
+        }
+
+        .produto {
+            /*top: 20%;
+            left: 10%;*/
+            /*position: absolute;
+            transform: translate(-50% -50%);*/
+            height: fit-content;
+            width: fit-content;
+            clear: both;
+            margin: 10px;
+        }
+
+        .product_min_img {
+            float: left;
+        }
+
+        .img-container {
+            padding: 1vh;
+            float: right;
+        }
+
+        .img-container img {
+            height: 49vh;
+        }
+
+        .product_min_img img:hover {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galeria em Javascript</h1>
+
+    <div class="produtos">
+        <div class="produto">
+            <div class="img-container">
+                <img src="img/GaleriaPrincipalS.jpeg" alt="catálogo">
+            </div>
+            <div class="product_min_img">
+                <img src="img/GaleriaPrincipalS.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalS2.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalS3.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalS4.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalS5.jpeg" onclick="Efeito(this)">
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-container">
+                <img src="img/GaleriaPrincipal.jpeg" alt="catálogo">
+            </div>
+            <div class="product_min_img">
+                <img src="img/GaleriaPrincipal.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipal2.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipal3.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipal4.jpeg" onclick="Efeito(this)">
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-container">
+                <img src="img/GaleriaPrincipalAm.jpeg" alt="catálogo">
+            </div>
+            <div class="product_min_img">
+                <img src="img/GaleriaPrincipalAm.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalAm1.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalAm2.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalAm3.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalAm4.jpeg" onclick="Efeito(this)">
+            </div>
+        </div>
+        <div class="produto">
+            <div class="img-container">
+                <img src="img/GaleriaPrincipalQuad.jpeg" alt="catálogo">
+            </div>
+            <div class="product_min_img">
+                <img src="img/GaleriaPrincipalQuad.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalQuad2.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalQuad3.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalQuad5.jpeg" onclick="Efeito(this)">
+                <img src="img/GaleriaPrincipalQuad6.jpeg" onclick="Efeito(this)">
+            </div>
+        </div>
+    </div>
+    <script>
+        function Efeito(peqimagem) {
+            var imgGrade = peqimagem.parentElement.parentElement.querySelectorAll("div.img-container img")[0];
+            imgGrade.src = peqimagem.src
+        }
+    </script>
+</body>
+
+</html>
