@@ -6,7 +6,7 @@ int main() {
     int i;
     //int a = 125; //numero 125
     //int b = 0435; //returna 258
-    //int c = 0x1FA; //Hexa decimal 
+    //int c; //Hexa decimal
     //char d = 0;
     //d += 1000; //returna -24 e alem disso é o esquema para não não dar erro
     //printf("Valor de a : %d\n", a); 

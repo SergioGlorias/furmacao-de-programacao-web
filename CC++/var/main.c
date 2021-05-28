@@ -8,7 +8,7 @@ int main() {
     int b = 0435; //returna 258
     int c = 0x1FA; //Hexa decimal 
     char d = 0;
-    d += 1000; //returna -24 e alem disso é o esquema para não não dar erro
+    d += 500; //returna -24 e alem disso é o esquema para não não dar erro
     printf("Valor de a : %d\n", a); 
     printf("Valor de b : %d\n", b);
     printf("Valor de c : %d\n", c);
